@@ -29,7 +29,7 @@ public class Main {
         c1.getEmprego().setEmpregoAtual(true);
         c1.setPretensaoMinima(3000.00);
         c1.setPretensaoMaxima(6000.00);
-        c1.setHabilidades("Operador de pá carregadeira, Motorista cat E, Motorista de cargas perigosas");
+        c1.setHabilidades("Operador de pá carregadeira / Motorista cat E / Motorista de cargas perigosas");
 
         ConversorObjetoParaCsv conversor1 = new ConversorObjetoParaCsv();
         StringBuilder stringBuilder1 = conversor1.converterObjetoEmString(c1);
@@ -57,7 +57,7 @@ public class Main {
         c2.getEmprego().setEmpregoAtual(false);
         c2.setPretensaoMinima(2000.00);
         c2.setPretensaoMaxima(3500.00);
-        c2.setHabilidades("Recepcionista, telefonista e Operador de caixa");
+        c2.setHabilidades("Recepcionista / Telefonista / Operador de caixa");
 
         ConversorObjetoParaCsv conversor2 = new ConversorObjetoParaCsv();
         StringBuilder stringBuilder2 = conversor2.converterObjetoEmString(c2);

@@ -8,7 +8,7 @@ public class GeradorCsv {
 
     public void gerarCsv(List<StringBuilder> cadastroList) {
         try {
-            File cadastro = new File("\"caminho do arquivo\"","cadastro.csv");
+            File cadastro = new File("caminho do arquivo","cadastro.csv");
             FileOutputStream output = new FileOutputStream(cadastro);
 
             StringBuilder cabecalho = new StringBuilder();
