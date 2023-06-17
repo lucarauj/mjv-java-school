@@ -11,7 +11,7 @@ public class Main {
 
         c1.setNome("Lucas");
         c1.setCpf("33344455566");
-        c1.setDataNascimento(c1.formatarData("2023-06-06"));
+        c1.setDataNascimento(c1.formatarData("1990-06-06"));
         c1.setSexo(SexoEnum.MASCULINO);
         c1.getEndereco().setLogradouro("Rua 1");
         c1.getEndereco().setNumero("433");
@@ -39,7 +39,7 @@ public class Main {
 
         c2.setNome("Pedro");
         c2.setCpf("88344455566");
-        c2.setDataNascimento(c2.formatarData("2023-05-05"));
+        c2.setDataNascimento(c2.formatarData("1984-05-05"));
         c2.setSexo(SexoEnum.MASCULINO);
         c2.getEndereco().setLogradouro("Rua Alenir");
         c2.getEndereco().setNumero("50");
@@ -62,6 +62,33 @@ public class Main {
         ConversorObjetoParaCsv conversor2 = new ConversorObjetoParaCsv();
         StringBuilder stringBuilder2 = conversor2.converterObjetoEmString(c2);
         cadastroList.add(stringBuilder2);
+
+        Cadastro c3 = new Cadastro();
+
+        c3.setNome("Maria");
+        c3.setCpf("88344455566");
+        c3.setDataNascimento(c2.formatarData("2001-05-05"));
+        c3.setSexo(SexoEnum.FEMININO);
+        c3.getEndereco().setLogradouro("Rua Bernadete");
+        c3.getEndereco().setNumero("232");
+        c3.getEndereco().setBairro("Pedra Azul");
+        c3.getEndereco().setCidade("Ribeirinho");
+        c3.getEndereco().setEstado("Bahia");
+        c3.getContato().setEmail("maria@gmail.com");
+        c3.getContato().setTelefone(8133743467L);
+        c3.getContato().setCelular(81998222323L);
+        c3.getContato().setCelularWhats(true);
+        c3.getEmprego().setProfissao("Desenvolvedora");
+        c3.getEmprego().setEmpresa("Devslook");
+        c3.getEmprego().setSalario(4500.00);
+        c3.getEmprego().setEmpregoAtual(true);
+        c3.setPretensaoMinima(4000.00);
+        c3.setPretensaoMaxima(6000.00);
+        c3.setHabilidades("Desenvolvedora front-end, Git/GitHub, Cloud");
+
+        ConversorObjetoParaCsv conversor3 = new ConversorObjetoParaCsv();
+        StringBuilder stringBuilder3 = conversor3.converterObjetoEmString(c3);
+        cadastroList.add(stringBuilder3);
 
         csv.gerarCsv(cadastroList);
     }
