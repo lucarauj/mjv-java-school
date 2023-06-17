@@ -22,7 +22,7 @@ public class ConversorObjetoParaCsv {
                         + (cadastro.getEmprego().getEmpregoAtual() ? "Sim" : "Não") + ", "
                         + (String.format("%.2f", cadastro.getPretensaoMinima()).replace(",", ".")) + ", "
                         + (String.format("%.2f", cadastro.getPretensaoMaxima()).replace(",", ".")) + ", "
-                        + cadastro.getHabilidades().replace(",", ".")
+                        + cadastro.getHabilidades().replace(",", ";")
         );
         return stringBuilder;
     }
