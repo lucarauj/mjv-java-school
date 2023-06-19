@@ -17,9 +17,12 @@ public class GeradorCsv {
             output.write(cabecalho.toString().getBytes());
             output.write("\n".getBytes());
 
-            for (StringBuilder conteudo : cadastroList  ) {
-                conteudo.append("\n");
-                output.write(conteudo.toString().getBytes());
+            for (int i = 0; i < cadastroList.size(); i++) {
+                output.write(cadastroList.get(i).toString().getBytes());
+
+                if (i < cadastroList.size() - 1) {
+                    output.write("\n".getBytes());
+                }
             }
             output.close();
         } catch (IOException e) {

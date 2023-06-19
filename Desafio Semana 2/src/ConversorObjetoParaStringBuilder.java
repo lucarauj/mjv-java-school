@@ -1,4 +1,4 @@
-public class ConversorObjetoParaCsv {
+public class ConversorObjetoParaStringBuilder {
 
     public StringBuilder converterObjetoEmString(Cadastro cadastro) {
         StringBuilder stringBuilder = new StringBuilder(
