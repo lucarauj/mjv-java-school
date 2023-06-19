@@ -1,3 +1,5 @@
+package modelo;
+
 public class ConversorObjetoParaStringBuilder {
 
     public StringBuilder converterObjetoEmString(Cadastro cadastro) {

@@ -1,3 +1,8 @@
+package processamento;
+
+import modelo.Cadastro;
+import modelo.LeitorCsv;
+
 import java.util.List;
 
 public class LerArquivo {

@@ -1,3 +1,5 @@
+package modelo;
+
 public class Contato {
 
     private String email;

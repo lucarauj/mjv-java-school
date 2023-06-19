@@ -1,3 +1,10 @@
+package processamento;
+
+import modelo.Cadastro;
+import modelo.ConversorObjetoParaStringBuilder;
+import modelo.GeradorCsv;
+import modelo.SexoEnum;
+
 import java.util.ArrayList;
 import java.util.List;
 
