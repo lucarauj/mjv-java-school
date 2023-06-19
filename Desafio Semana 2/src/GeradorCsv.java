@@ -12,7 +12,7 @@ public class GeradorCsv {
             FileOutputStream output = new FileOutputStream(cadastro);
 
             StringBuilder cabecalho = new StringBuilder();
-            cabecalho.append("NOME, CPF, DATA DE NASCIMENTO, SEXO, LOGRADOURO, NUMERO, BAIRRO, COMPLEMENTO, CIDADE, ESTADO, EMAIL, TELEFONE, CELULAR, WHATSAPP, PROFISSAO, EMPRESA, SALARIO, EMPREGO ATUAL, PRETENSAO SALARIAL (MIN), PRETENSAO SALARIAL (MAX), HABILIDADES");
+            cabecalho.append("NOME,CPF,DATA DE NASCIMENTO,SEXO,LOGRADOURO,NUMERO,BAIRRO,COMPLEMENTO,CIDADE,ESTADO,EMAIL,TELEFONE,CELULAR,WHATSAPP,PROFISSAO,EMPRESA,SALARIO,EMPREGO ATUAL,PRETENSAO SALARIAL (MIN),PRETENSAO SALARIAL (MAX),HABILIDADES");
 
             output.write(cabecalho.toString().getBytes());
             output.write("\n".getBytes());

@@ -42,7 +42,7 @@ public class Cadastro {
     }
 
     public String getDataNascimento() {
-        DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+        DateFormat formatador = new SimpleDateFormat("yyyy-MM-dd");
         return formatador.format(dataNascimento);
     }
 
