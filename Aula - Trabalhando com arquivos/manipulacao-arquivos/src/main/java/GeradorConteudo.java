@@ -40,6 +40,6 @@ public class GeradorConteudo {
             conteudo.append(System.lineSeparator());
         }
 
-        return conteudo.toString().substring(0, conteudo.toString().length()-1);
+        return conteudo.toString().substring(0, conteudo.toString().length()-2);
     }
 }

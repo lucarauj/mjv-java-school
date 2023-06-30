@@ -24,8 +24,6 @@ public class GeradorArquivo {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 
     public static void escrever(String endereco, String conteudo) {
